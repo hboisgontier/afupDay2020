@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Les CSS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Les CSS</h1>
+        </header>
+        <main>
+            <h2>Bonne pratique n° 22 : Limiter le nombre de CSS et les compresser</h2>
+            <div id="accolade">
+                <ul class="animation1">
+                    <li>Un fichier CSS pour l’ensemble des pages</li>
+                    <li>Des CSS additionnels pour les pages spécifiques</li>
+                    <li class="animation2">Minification des CSS
+                        <ul>
+                            <li><a href="https://www.minifier.org/" target="_blank" rel="noopener">minifier.org</a></li>
+                        </ul>
+                    </li>
+                    <li class="animation2">Compression des CSS
+                        <ul>
+                            <li>Apache : <code>AddOutputFilterByType DEFLATE text/css</code></li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="animation2"><span>}</span>-65%</p>
+            </div>
+        </main>
+        <aside>
+            <div class="animation3 seo">
+                <p>Ça ne me change rien du tout, j’ignore les fichiers CSS.</p>
+            </div>
+            <div class="animation4 access">
+                <p>Je ne vois pas la différence ! 😎</p>
+            </div>
+            <div class="animation5 perf">
+                <p>C’est également un gain dans la vitesse de transmission ! ❤️❤️❤️</p>
+            </div>
+        </aside>
+        <nav>
+            <a href="index.html" id="home" title="Un site internet pour répondre aux défis actuels (Début de la présentation)"></a>
+            <a href="introGreenIT.html" title="Le green IT"></a>
+            <a href="introAccessibilite.html" title="L'accessibilité"></a>
+            <a href="introSEO.html" title="Le référencement naturel (SEO)"></a>
+            <a href="introPerf.html" title="La performance"></a>
+            <a href="recommandationsGreenIT.html" title="Quelques recommandations pour le Green IT"></a>
+            <a href="greenIT1.html" title="La conception du site"></a>
+            <a href="greenIT2.html" id="courant" title="Les CSS"></a>
+            <a href="greenIT3.html" title="Et en PHP ?"></a>
+            <a href="recommandationsAccess.html" title="Quelques recommandations pour l'accessibilité"></a>
+            <a href="accessibilite1.html" title="Les couleurs"></a>
+            <a href="accessibilite2.html" title="La structuration des pages"></a>
+            <a href="recommandationsSEO.html" title="Quelques recommandations pour le référencement"></a>
+            <a href="SEO1.html" title="Aider à l’indexation"></a>
+            <a href="conclusion.html" title="Conclusion et perspectives"></a>
+            <a href="pub.html" title="Pour info..."></a>
+        </nav>
+        <script src="navigation.js"></script>
+    </body>
+</html>

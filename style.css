@@ -1,0 +1,146 @@
+.animation1, .animation2, .animation3, .animation4, .animation5, .animation6, .animation7, .animation8, .animation9, .animation10 {
+    display: none;
+}
+
+* {
+	overflow: hidden;
+}
+
+.titreGeneral {
+	grid-template-rows: 70fr 2fr;
+}
+
+body {
+	background : rgb(52, 54, 66);
+	color: white;
+	display: grid; 
+	grid-template-columns: 5fr 2fr;
+	grid-template-rows: 10fr 60fr 2fr;
+	gap: 20px;
+	font-size: 2vw;
+	margin: 0;
+
+}
+
+html, body, nav {
+	height: 100%;
+}
+
+header, nav { 
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+}
+nav {
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	border-top: white 1px solid;
+}
+
+nav a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: #134a80;
+}
+
+#courant ~ a {
+	background-color: rgb(52, 54, 66);
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+a {
+    color: inherit;
+}
+
+.center {
+	text-align: center;
+}
+
+del {
+    text-decoration: line-through;
+    background-color: #ff4949;
+}
+
+ins {
+    text-decoration: none;
+    background-color: #56a12b;
+}
+
+.greenIT {
+	background: url('medias/Ugreen.png') no-repeat;
+	min-height: 60px;
+}
+
+.access {
+	background: url('medias/Uaccess.png') no-repeat;
+	min-height: 60px;
+}
+
+.perf {
+	background: url('medias/Uperf.png') no-repeat;
+	min-height: 60px;
+}
+
+.seo {
+	background: url('medias/Useo.png') no-repeat;
+	min-height: 60px;
+}
+
+.greenIT p, .access p, .perf p, .seo p {
+	background-color: white;
+	margin: 0 0 10px 60px;
+	border-radius: 0 10px 10px 10px;
+	color: black;
+	padding: 10px;
+}
+
+main img {
+	margin: auto;
+}
+
+h1 {
+	font-size: 4vw;
+}
+
+h2 {
+	font-size: 3vw;
+}
+
+h3 {
+	font-size: 2vw;
+	padding-top: 20vh;
+}
+
+main p {
+	margin-left: 40px;
+}
+
+main {
+	padding-left: 10px;
+}
+
+aside {
+	padding-right: 10px;
+}
+
+li::before/*, main p::before*/ {
+	content: "⇾ ";
+}
+
+#accolade {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	align-items: flex-end;
+}
+
+#accolade p  {
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
+
+#accolade span {
+	margin-top: -2vw;
+	font-size: 12vw;
+}

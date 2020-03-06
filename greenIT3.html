@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Et en PHP ?</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Et en PHP ?</h1>
+        </header>
+        <main>
+            <h2 class="animation1">Bonne pratique n° 66 : Utiliser la simple cote ' au lieu du guillemet "</h2>
+            <h2 class="animation2">Bonne pratique n° 68 : Libérer de la mémoire les variables qui ne sont plus nécessaires (<code><a href="https://www.php.net/manual/fr/function.unset.php" target="_blank" rel="noopener">unset()</a></code>)</h2>
+            <h2 class="animation3">Bonne pratique n° 69 : Ne pas appeler de fonction dans la déclaration d’une boucle de type for</h2>
+            <p class="animation3">Le code suivant<br>
+                <code>
+                    for($i = 0; $i&lt;<del>getNbElements()</del>; ++$i) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;…<br>
+                    }
+                </code><br>
+                doit être remplacé par<br>
+                <code>
+                    <ins>$nb = getNbElements();</ins><br>
+                    for($i = 0; $i&lt;<ins>$nb</ins>; ++$i) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;…<br>
+                    }
+                </code>
+                </p>
+            </main>
+        <aside>
+            <div class="animation4 greenIT">
+                <p>C’est un ensemble de petites choses qui mises bout à bout améliorent l'emprunte carbone. 🌍</p>
+            </div>
+            <div class="animation5 seo">
+                <p>Les sites rapides et efficaces sont mieux référencés.</p>
+            </div>
+            <div class="animation6 access">
+                <p>Ce qui se passe côté serveur...</p>
+            </div>
+            <div class="animation7 perf">
+                <p>😍 😍 😍 😍</p>
+            </div>
+        </aside>
+        <nav>
+            <a href="index.html" id="home" title="Un site internet pour répondre aux défis actuels (Début de la présentation)"></a>
+            <a href="introGreenIT.html" title="Le green IT"></a>
+            <a href="introAccessibilite.html" title="L'accessibilité"></a>
+            <a href="introSEO.html" title="Le référencement naturel (SEO)"></a>
+            <a href="introPerf.html" title="La performance"></a>
+            <a href="recommandationsGreenIT.html" title="Quelques recommandations pour le Green IT"></a>
+            <a href="greenIT1.html" title="La conception du site"></a>
+            <a href="greenIT2.html" title="Les CSS"></a>
+            <a href="greenIT3.html" id="courant" title="Et en PHP ?"></a>
+            <a href="recommandationsAccess.html" title="Quelques recommandations pour l'accessibilité"></a>
+            <a href="accessibilite1.html" title="Les couleurs"></a>
+            <a href="accessibilite2.html" title="La structuration des pages"></a>
+            <a href="recommandationsSEO.html" title="Quelques recommandations pour le référencement"></a>
+            <a href="SEO1.html" title="Aider à l’indexation"></a>
+            <a href="conclusion.html" title="Conclusion et perspectives"></a>
+            <a href="pub.html" title="Pour info..."></a>
+        </nav>
+        <script src="navigation.js"></script>
+    </body>
+</html>
