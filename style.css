@@ -1,3 +1,4 @@
+
 .animation1, .animation2, .animation3, .animation4, .animation5, .animation6, .animation7, .animation8, .animation9, .animation10 {
     display: none;
 }
@@ -10,16 +11,23 @@
 	grid-template-rows: 70fr 2fr;
 }
 
+.titreGeneral header {
+	border: 0;
+}
+
 body {
 	background : rgb(52, 54, 66);
 	color: white;
 	display: grid; 
 	grid-template-columns: 5fr 2fr;
 	grid-template-rows: 10fr 60fr 2fr;
-	gap: 20px;
 	font-size: 2vw;
 	margin: 0;
 
+}
+
+aside {
+	max-height: 65%;
 }
 
 html, body, nav {
@@ -35,7 +43,10 @@ nav {
 	grid-template-columns: repeat(16, 1fr);
 	border-top: white 1px solid;
 }
-
+header {
+	border-bottom: white 1px solid;
+	/*height: 100%;*/
+}
 nav a {
 	display: block;
 	height: 100%;
@@ -58,6 +69,10 @@ a {
 	text-align: center;
 }
 
+del, ins {
+	padding: 0, 6px, 0, 6px;
+}
+
 del {
     text-decoration: line-through;
     background-color: #ff4949;
@@ -69,23 +84,26 @@ ins {
 }
 
 .greenIT {
-	background: url('medias/Ugreen.png') no-repeat;
-	min-height: 60px;
+	background: url('medias/Ugreen.svg') no-repeat;
 }
 
 .access {
-	background: url('medias/Uaccess.png') no-repeat;
-	min-height: 60px;
+	background: url('medias/Uaccess.svg') no-repeat;
 }
 
 .perf {
-	background: url('medias/Uperf.png') no-repeat;
-	min-height: 60px;
+	background: url('medias/Uperf.svg') no-repeat;
 }
 
 .seo {
-	background: url('medias/Useo.png') no-repeat;
+	background: url('medias/Useo.svg') no-repeat;
+}
+
+.greenIT, .access, .perf, .seo {
 	min-height: 60px;
+	background-position: 0 5px;
+	background-size: 60px 60px;
+	padding-top: 5px;
 }
 
 .greenIT p, .access p, .perf p, .seo p {
@@ -97,6 +115,7 @@ ins {
 }
 
 main img {
+	display: block;
 	margin: auto;
 }
 
@@ -117,12 +136,8 @@ main p {
 	margin-left: 40px;
 }
 
-main {
-	padding-left: 10px;
-}
-
-aside {
-	padding-right: 10px;
+main, aside {
+	padding: 0 10px 0 10px;
 }
 
 li::before/*, main p::before*/ {

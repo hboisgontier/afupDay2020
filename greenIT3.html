@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-cmt="Et en PHP ? me diriez vous... Et bien dans le livre vous trouverez également un certain nombre de recommandations">
     <head>
         <title>Et en PHP ?</title>
         <meta charset="UTF-8">
@@ -11,9 +11,9 @@
             <h1>Et en PHP ?</h1>
         </header>
         <main>
-            <h2 class="animation1">Bonne pratique n° 66 : Utiliser la simple cote ' au lieu du guillemet "</h2>
-            <h2 class="animation2">Bonne pratique n° 68 : Libérer de la mémoire les variables qui ne sont plus nécessaires (<code><a href="https://www.php.net/manual/fr/function.unset.php" target="_blank" rel="noopener">unset()</a></code>)</h2>
-            <h2 class="animation3">Bonne pratique n° 69 : Ne pas appeler de fonction dans la déclaration d’une boucle de type for</h2>
+            <h2 class="animation1" data-cmt="L'utilisation de la simple quote à la place de la double quote">Bonne pratique n° 66 : Utiliser la simple cote ' au lieu du guillemet "</h2>
+            <h2 class="animation2" data-cmt="la libération de la mémoire plus utilisée">Bonne pratique n° 68 : Libérer de la mémoire les variables qui ne sont plus nécessaires (<code><a href="https://www.php.net/manual/fr/function.unset.php" target="_blank" rel="noopener">unset()</a></code>)</h2>
+            <h2 class="animation3" data-cmt="la suppression des appels multiples inutiles de fonctions">Bonne pratique n° 69 : Ne pas appeler de fonction dans la déclaration d’une boucle de type for</h2>
             <p class="animation3">Le code suivant<br>
                 <code>
                     for($i = 0; $i&lt;<del>getNbElements()</del>; ++$i) {<br>
@@ -30,16 +30,17 @@
                 </p>
             </main>
         <aside>
-            <div class="animation4 greenIT">
+            <div class="animation4 greenIT" data-cmt="Cela peut paraitre dérisoire mais lorsque cela est répéter dans beaucoup de pages qui sont parcourues par un grand nombre d'internautes cela fait toute la différence">
                 <p>C’est un ensemble de petites choses qui mises bout à bout améliorent l'emprunte carbone. 🌍</p>
             </div>
-            <div class="animation5 seo">
+            <div class="animation5 seo" data-cmt="Il faut savoir que Google favorise les sites rapides dans son algorithme.
+Ils viennent d'ailleurs de sortir Web Vitals qui permet d'analyser la performance d'un site.">
                 <p>Les sites rapides et efficaces sont mieux référencés.</p>
             </div>
-            <div class="animation6 access">
+            <div class="animation6 access" data-cmt="La manière dont sont générées les pages ne change rien pour l'accessibilité">
                 <p>Ce qui se passe côté serveur...</p>
             </div>
-            <div class="animation7 perf">
+            <div class="animation7 perf" data-cmt="Tout cela permet d'améliorer les performances !">
                 <p>😍 😍 😍 😍</p>
             </div>
         </aside>

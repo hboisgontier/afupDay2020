@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-cmt="Concernant la structuration des pages, il faut que le code soit valide W3C.
+Ceci est extermement important puisque cela permettra de restituer correctement à l'utilisateur quelque soit la technique d'accès à l'onformation que ce soit un simple navigateur web ou un navigateur avec des assistants pour palier les handicaps de l'utilisateur.">
     <head>
         <title>La structuration des pages</title>
         <meta charset="UTF-8">
@@ -14,19 +15,29 @@
             <h2>Critère 8.2 Pour chaque page web, le code source généré est-il valide selon le type de document spécifié&nbsp;?</h2>
             <p><a href="https://validator.w3.org/" target="_blank" rel="noopener">validator.w3.org</a></p>
             <h2 class="animation1">Critère 8.3 Dans chaque page web, la langue par défaut est-elle présente&nbsp;?</h2>
-            <ul class="animation1">
-                <li>Attribut lang</li>
+            <ul class="animation1" data-cmt="Il faut que la langue de chaque page soit indiquée dans l'attribut lang de la balise html.
+Cela permet, par exemple pour les lecteurs d'écran, de choisir la bonne voie et la bonne prononciation pour lire le texte.">
+                <li>Attribut <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Attributs_universels/lang" target="_blank" rel="noopener">lang</a></li>
             </ul>
-            <h2 class="animation2">Critère 9.2 Dans chaque page web, la structure du document est-elle cohérente&nbsp;?</h2>
-            <ul class="animation2">
+            <pre class="animation2" data-cmt="Sachez que vous pouvez également mettre cet attribut sur n'importe quelle balise : Il est universel !
+Si vous avez une citation une citation en anglais dans un document français, vous pouvez ainsi procéder comme ceci.">&lt;blockquote lang="en-us" cite="https://www.w3.org/"&gt;
+    &lt;p&gt;Leading the web to its full potential&lt;/p&gt;
+&lt;/blockquote&gt;</pre>
+            <h2 class="animation3">Critère 9.2 Dans chaque page web, la structure du document est-elle cohérente&nbsp;?</h2>
+            <ul class="animation3" data-cmt="Il faut utiliser les balises sémantiques du HTML5 plutôt que des balises DIV.
+Ces balises permettent de donner le rôle de ce qu'elles contiennent.
+Cela permet par exemple d'accéder facilement au menu de navigation pour un utilisateur utilisant outil d'assistance.">
                 <li>Utilisation des balises sémantiques du HTML 5 (header, nav, main, article, footer...)</li>
             </ul>
         </main>
         <aside>
-            <div class="animation3 seo">
+            <div class="animation2 seo">
+                <p>Ça m'intéresse aussi !</p>
+            </div>
+            <div class="animation4 seo" data-cmt="Si le contenu pertinant de la page est bien indiqué cela améliore le référencement">
                 <p>Meilleure compréhention = meilleur référencement 🙌</p>
             </div>
-            <div class="animation4 perf">
+            <div class="animation5 perf" data-cmt="Et les performance restent inchangées">
                 <p>Mêmes performances...</p>
             </div>
         </aside>

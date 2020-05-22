@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-cmt="Concernant les CSS, il est conseillé de limiter leur nombre et de les compresser">
     <head>
         <title>Les CSS</title>
         <meta charset="UTF-8">
@@ -13,10 +13,16 @@
         <main>
             <h2>Bonne pratique n° 22 : Limiter le nombre de CSS et les compresser</h2>
             <div id="accolade">
-                <ul class="animation1">
+                <ul class="animation1" data-cmt="Vous pouvez regrouper au sein d'un même fichier CSS l'ensemble des règles qui sont valables pour toutes les pages et ainsi éviter son rechargement à chaque fois.
+
+Et ensuite, les pages ayant des besoins spécifiques auront des fichiers CSS en complément.">
                     <li>Un fichier CSS pour l’ensemble des pages</li>
                     <li>Des CSS additionnels pour les pages spécifiques</li>
-                    <li class="animation2">Minification des CSS
+                    <li class="animation2" data-cmt="La minification consiste à supprimer tous les espaces, retour à ligne, commentaires, bref tout ce qui n'est pas indispensable à votre navigateur. Il existe plein d'outils permettant de la faire tel que minifier.org par exemple...
+
+Les fichiers peuvent également être compressés (cela peut être fait facilement en ajoutant cette ligne de configuration à votre Apache)
+
+La minification et la compression vous permettent de gagner de l'ordre des deux tiers du poids du fichier.">Minification des CSS
                         <ul>
                             <li><a href="https://www.minifier.org/" target="_blank" rel="noopener">minifier.org</a></li>
                         </ul>
@@ -31,13 +37,13 @@
             </div>
         </main>
         <aside>
-            <div class="animation3 seo">
+            <div class="animation3 seo" data-cmt="Pour le référencement et l'accessibilité cela ne change rien">
                 <p>Ça ne me change rien du tout, j’ignore les fichiers CSS.</p>
             </div>
-            <div class="animation4 access">
+            <div class="animation3 access">
                 <p>Je ne vois pas la différence ! 😎</p>
             </div>
-            <div class="animation5 perf">
+            <div class="animation4 perf" data-cmt="par contre vous allez y gagner en performance !">
                 <p>C’est également un gain dans la vitesse de transmission ! ❤️❤️❤️</p>
             </div>
         </aside>

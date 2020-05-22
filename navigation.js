@@ -8,6 +8,10 @@ function init() {
     document.onkeydown = navigation;
     main = document.getElementsByTagName("main")[0];
     aside = document.getElementsByTagName("aside")[0];
+    var racine = document.documentElement;
+    if(racine.hasAttribute('data-cmt')) {
+        console.log(racine.getAttribute('data-cmt'));
+    }
 }
 
 function navigation(e) {
@@ -26,6 +30,10 @@ function navigation(e) {
                     element.style.display = 'list-item';
                 } else {
                     element.style.display = 'inherit';
+                }
+                if(element.hasAttribute('data-cmt')) {
+                    //console.clear();
+                    console.log(element.getAttribute('data-cmt'));
                 }
             }
             if(main) main.scroll(0, 99999);
